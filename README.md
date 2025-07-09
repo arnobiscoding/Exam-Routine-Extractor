@@ -13,6 +13,7 @@ This project extracts exam routines from Google Sheets HTML exports (such as UIU
 - Python 3.7+
 - `beautifulsoup4`
 - `requests`
+- `lxml`
 
 Install dependencies:
 ```bash
