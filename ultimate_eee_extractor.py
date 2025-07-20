@@ -132,65 +132,6 @@ def parse_eee_html_table(html_file: str) -> list:
                 data.append(entry)
     return data
 
-def get_verified_exam_structure() -> List[Dict]:
-    """Get the verified EEE exam structure based on the actual table from the screenshot"""
-    return [
-        # Day 1
-        {'day': 'Day 1', 'time_slot': 'T1 (9:00-11:00 AM)', 
-         'courses': ['EEE 101']},
-        {'day': 'Day 1', 'time_slot': 'T2 (11:30-1:30 PM)', 
-         'courses': []},
-        {'day': 'Day 1', 'time_slot': 'T3 (2:00-4:00 PM)', 
-         'courses': []},
-         
-        # Day 2  
-        {'day': 'Day 2', 'time_slot': 'T1 (9:00-11:00 AM)', 
-         'courses': ['ENG 1013', 'MAT 1103']},
-        {'day': 'Day 2', 'time_slot': 'T2 (11:30-1:30 PM)', 
-         'courses': ['EEE 1003']},
-        {'day': 'Day 2', 'time_slot': 'T3 (2:00-4:00 PM)', 
-         'courses': ['EEE 2103', 'PHY 2105']},
-         
-        # Day 3
-        {'day': 'Day 3', 'time_slot': 'T1 (9:00-11:00 AM)', 
-         'courses': ['MAT 2105', 'PHY 2103']},
-        {'day': 'Day 3', 'time_slot': 'T2 (11:30-1:30 PM)', 
-         'courses': []},
-        {'day': 'Day 3', 'time_slot': 'T3 (2:00-4:00 PM)', 
-         'courses': ['EEE 2141', 'EEE 2105']},
-         
-        # Day 4
-        {'day': 'Day 4', 'time_slot': 'T1 (9:00-11:00 AM)', 
-         'courses': []},
-        {'day': 'Day 4', 'time_slot': 'T2 (11:30-1:30 PM)', 
-         'courses': ['CHE 2101']},
-        {'day': 'Day 4', 'time_slot': 'T3 (2:00-4:00 PM)', 
-         'courses': []},
-         
-        # Day 5
-        {'day': 'Day 5', 'time_slot': 'T1 (9:00-11:00 AM)', 
-         'courses': ['EEE 1001']},
-        {'day': 'Day 5', 'time_slot': 'T2 (11:30-1:30 PM)', 
-         'courses': []},
-        {'day': 'Day 5', 'time_slot': 'T3 (2:00-4:00 PM)', 
-         'courses': ['ECO 2101', 'EEE 3303']},
-         
-        # Day 6
-        {'day': 'Day 6', 'time_slot': 'T1 (9:00-11:00 AM)', 
-         'courses': ['BDS 1201']},
-        {'day': 'Day 6', 'time_slot': 'T2 (11:30-1:30 PM)', 
-         'courses': []},
-        {'day': 'Day 6', 'time_slot': 'T3 (2:00-4:00 PM)', 
-         'courses': ['MAT 2107', 'EEE 3303']},
-         
-        # Day 7
-        {'day': 'Day 7', 'time_slot': 'T1 (9:00-11:00 AM)', 
-         'courses': ['PHY 105']},
-        {'day': 'Day 7', 'time_slot': 'T2 (11:30-1:30 PM)', 
-         'courses': []},
-        {'day': 'Day 7', 'time_slot': 'T3 (2:00-4:00 PM)', 
-         'courses': []}
-    ]
 
 def process_exam_schedule(exam_schedule: List[Dict]) -> Dict:
     """Process the exam schedule to separate midterm and final exams"""

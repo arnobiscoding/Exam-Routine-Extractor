@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 """
 Ultimate BA English Exam Routine Extractor
 Parses the BA English routine table (Summer 2025 format)

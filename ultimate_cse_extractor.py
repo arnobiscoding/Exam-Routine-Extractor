@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 """
 Ultimate CSE Exam Routine Extractor
 Robustly parses the CSE routine table (Summer 2025 format)

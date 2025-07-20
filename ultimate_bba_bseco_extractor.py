@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 """
 Ultimate BBA, BBA in AIS, BSECO Exam Routine Extractor (Summer 2025)
 Parses the BBA/BSECO routine table and outputs a flat list of {day, slot, time_interval, course_code, course_name}
